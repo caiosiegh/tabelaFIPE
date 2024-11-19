@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Fipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="app">Consulta de Tabela <span>Fipe</span> para Motos</h1>
+    <div class="menu">
+        <div>
+            <input list="motos" id="motoEscolhida" placeholder="Escolha uma marca" autocomplete="off" />
+            <datalist id="motos"></datalist>
+        </div>
+        <div>
+            <input list="modelo" id="modeloMoto" placeholder="Escolha o modelo" autocomplete="off" />
+            <datalist id="modelo"></datalist>
+        </div>
+        <div>
+            <input list="anoMoto" id="anoMotoInput" placeholder="Selecione o ano" autocomplete="off" />
+            <datalist id="anoMoto"></datalist>
+        </div>
+    </div>
+    <div class="botao">
+        <button id="consultarBtn">Consultar Moto</button>
+    </div>
+    <p id="tabelaFIPE" class="resultadoConsulta"></p>
+    <script src="scrpit.js"></script>
+</body>
+
+</html>
